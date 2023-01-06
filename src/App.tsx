@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <IntroductionSection></IntroductionSection>
-      {/* <AboutMeSection></AboutMeSection> */}
+      <AboutMeSection></AboutMeSection>
     </div>
   );
 }
