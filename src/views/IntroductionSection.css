@@ -1,0 +1,14 @@
+.introductionSection.masthead {
+  height: 100vh;
+  display: flex;
+  background-color: #1e1f26;
+  overflow-y: scroll;
+}
+
+.introductionText .introductionH1 {
+  margin-top: 35vh !important;
+}
+
+.colorEmphasis {
+  color: #b41176;
+}
