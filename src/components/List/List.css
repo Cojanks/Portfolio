@@ -1,0 +1,14 @@
+.list--li.list--li-icon div,
+.list--li.list--li-icon span,
+.list--li.list--li-icon a {
+  display: inline-block;
+}
+
+.list--li.list--li-icon {
+  list-style: none;
+}
+
+.list--ul {
+  padding: 0;
+  margin: 0;
+}

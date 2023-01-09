@@ -19,7 +19,6 @@ type TabPaneContentTypes = {
 const Tab: FC<TabProps> = ({ panes }) => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 
-  const handleTabClick = (ind: number) => {};
   return (
     <div className="tab--container">
       <div className="tab--header-container">
@@ -33,7 +32,7 @@ const Tab: FC<TabProps> = ({ panes }) => {
                   : 'tab--header'
               }
               onClick={() => {
-                handleTabClick(ind);
+                setActiveTabIndex(ind);
               }}
             >
               {header.tabTitle}
