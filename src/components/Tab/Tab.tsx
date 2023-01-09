@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import { CompPropsWithChildrenAndStyles } from 'types';
 import './Tab.css';
 
@@ -17,11 +17,33 @@ type TabPaneContentTypes = {
 };
 
 const Tab: FC<TabProps> = ({ panes }) => {
-  console.log(panes);
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
+
+  const handleTabClick = (ind: number) => {};
   return (
     <div className="tab--container">
-      <div className="tab--header"></div>
-      <div className="tab--content"></div>
+      <div className="tab--header-container">
+        {panes.map((header, ind) => {
+          return (
+            <div
+              key={header.tabContent.tabKey}
+              className={
+                ind === activeTabIndex
+                  ? 'tab--header tab--header-active'
+                  : 'tab--header'
+              }
+              onClick={() => {
+                handleTabClick(ind);
+              }}
+            >
+              {header.tabTitle}
+            </div>
+          );
+        })}
+      </div>
+      <div className="tab--content">
+        {panes[activeTabIndex].tabContent.content}
+      </div>
     </div>
   );
 };

@@ -1,2 +1,36 @@
 .tab--container {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.tab--header-container {
+  display: inline-flex;
+  height: auto;
+}
+
+.tab--header {
+  display: flex;
+  padding: 6px 13px;
+  cursor: pointer;
+  margin-bottom: -1px;
+  z-index: 5;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.tab--header.tab--header-active {
+  background-color: white;
+  border: 1px solid #666;
+
+  border-bottom: 1px solid white;
+}
+
+.tab--content {
+  border: 1px solid #666;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 13px;
+  min-width: 350px;
+  z-index: 4;
+  background-color: white;
 }
