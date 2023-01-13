@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutMeSection from 'views/AboutMeSection';
+import AboutMeSection from 'views/AboutMeSection/AboutMeSection';
 import IntroductionSection from 'views/IntroductionSection';
 
 function App() {

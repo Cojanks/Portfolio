@@ -1,22 +1,5 @@
 import React from 'react';
 
-export const pages = [
-  {
-    tabTitle: 'First!',
-    tabContent: {
-      tabKey: 'tab1',
-      content: <div>derp</div>,
-    },
-  },
-  {
-    tabTitle: 'Second!',
-    tabContent: {
-      tabKey: 'tab2',
-      content: <div>second</div>,
-    },
-  },
-];
-
 export const profileCardList = [
   {
     icon: 'check',
@@ -50,5 +33,13 @@ export const profileCardList = [
     icon: 'bicycle',
     iconColor: 'teal',
     content: <div className="typography-grey">Bike Commuter</div>,
+  },
+];
+
+export const aboutMeExperienceList = [
+  {
+    icon: 'check',
+    iconColor: 'teal',
+    content: <div className="typography-grey">Verified Human</div>,
   },
 ];

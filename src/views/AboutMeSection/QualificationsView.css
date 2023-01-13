@@ -1,0 +1,16 @@
+.doubleHeader {
+  vertical-align: middle;
+}
+
+.qualificationsView
+  > .list--ul
+  > .list--li.list--li-icon
+  + .list--li.list--li-icon {
+  margin-top: 20px;
+}
+.subHeaderLink {
+  color: rgb(98, 109, 158) !important;
+}
+.subHeaderLink:hover {
+  color: #1e70bf !important;
+}

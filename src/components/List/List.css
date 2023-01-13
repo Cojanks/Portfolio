@@ -4,6 +4,14 @@
   display: inline-block;
 }
 
+.list--li.list--li-icon i {
+  margin-right: 8px;
+}
+
+.list--li.list--li-icon ul {
+  display: block;
+}
+
 .list--li.list--li-icon {
   list-style: none;
 }
