@@ -16,7 +16,7 @@ function AboutMeSection() {
         <div className="five wide column">
           <div className="cardContainer">
             <ProfileCard
-              image={process.env.PUBLIC_URL + '/assets/profilePic.png'}
+              image={process.env.PUBLIC_URL + '/assets/profilePicture.jpeg'}
               header={'Corey Jenkins'}
               subheader={'Design Technologist'}
               description={'Corey is a Front End Developer based in Austin, TX'}
