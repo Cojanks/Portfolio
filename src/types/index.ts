@@ -4,5 +4,5 @@ export type CompPropsWithChildrenAndStyles = {
 };
 
 export type CompPropsWithOnClick = {
-  onClick: (params?: any) => any;
+  onClick?: (params?: any) => any;
 };

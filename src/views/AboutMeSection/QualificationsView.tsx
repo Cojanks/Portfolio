@@ -105,6 +105,22 @@ const qualList = [
 function QualificationsView() {
   return (
     <div className="qualificationsView">
+      {/* TODO: turn this into component that adds popup when hovered */}
+      {/* <div className="">
+        <p>INT: BUSY TECH OFFICE - DAY</p>
+        <p>
+          Corey sits across from you, behind an ornate darkwood desk, sunglasses
+          obscuring his eyes.
+        </p>
+        <p>Corey</p>
+        <p>(MOBSTER VOICE)</p>
+        <p>
+          A certain resume URL says you were looking for some Qualifications.
+        </p>
+        <p>Corey takes a sip from his coffee cup</p>
+        <p>Corey</p>
+        <p>Let's make a deal.</p>
+      </div> */}
       <List items={qualList} defaultIconSize="big"></List>
     </div>
   );

@@ -1,0 +1,20 @@
+.pill--container {
+  padding: 3px 10px;
+  background-color: #999;
+  border: 2px solid transparent;
+  display: inline-flex;
+  border-radius: 20px;
+}
+.pill--container:hover {
+  filter: brightness(90%);
+}
+.pill--container.pill--container__outlined {
+  background-color: white;
+}
+.pill--container.pill--container__outlined:hover {
+  filter: brightness(200%);
+}
+
+.pill--container__clickable {
+  cursor: pointer;
+}

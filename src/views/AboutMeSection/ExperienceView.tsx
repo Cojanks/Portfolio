@@ -57,7 +57,14 @@ function ExperienceView() {
     <div className="experienceView">
       <div className="experienceSocials">
         You can view my full experience history on my
-        <a href="https://www.linkedin.com/in/cojanks/"> LinkedIn</a>
+        <a
+          href="https://www.linkedin.com/in/cojanks/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {' '}
+          LinkedIn
+        </a>
       </div>
       <List items={expList} defaultIconSize="big"></List>
     </div>
