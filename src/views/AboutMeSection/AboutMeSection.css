@@ -9,3 +9,28 @@
 .typography-grey {
   color: #777;
 }
+
+.responsiveGridContainer {
+  width: 80%;
+}
+
+@media screen and (max-width: 1200px) {
+  .responsiveGridContainer {
+    width: 95%;
+  }
+}
+.cardContainer {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .cardContainer {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutMeSection {
+    padding-top: 40px;
+  }
+}
