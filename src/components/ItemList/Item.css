@@ -1,0 +1,11 @@
+.item--footer {
+  padding: 0 15px 10px;
+  text-align: right;
+  border-bottom: 1px solid #999;
+  margin-bottom: 20px;
+}
+
+.item--info h4 {
+  margin: 0;
+  font-size: 22px;
+}

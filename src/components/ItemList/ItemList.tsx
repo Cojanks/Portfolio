@@ -1,6 +1,7 @@
 import Pill from 'components/Pill/Pill';
 import React, { FC, useEffect, useState } from 'react';
 import { CompPropsWithChildrenAndStyles } from 'types';
+import Item from './Item';
 
 import './ItemList.css';
 
@@ -43,17 +44,16 @@ const ItemList: FC<ItemListbProps> = ({ tags, items, initTagsActive = [] }) => {
 
   const [activeTags, setactiveTags] = useState(setInitActiveTags);
 
-  console.log(activeTags);
-
   return (
     <div className="itemList--container">
       <div className="itemList--filter-container">
-        <div className="itemList--filter-header">Filter By:</div>
+        <h3 className="itemList--filter-header">Filter By:</h3>
         <div className="itemList--filter-pills-container">
           {tags.map((tag) => {
             return (
               <Pill
                 key={tag.name}
+                label={tag.name}
                 color={tag.color}
                 clickable
                 onClick={() => {
@@ -74,6 +74,7 @@ const ItemList: FC<ItemListbProps> = ({ tags, items, initTagsActive = [] }) => {
           })}
         </div>
       </div>
+
       <div className="itemList--content-container">
         {items
           .filter((item) => {
@@ -83,9 +84,14 @@ const ItemList: FC<ItemListbProps> = ({ tags, items, initTagsActive = [] }) => {
           })
           .map((item) => {
             return (
-              <div key={item.name} className="">
-                {item.name}
-              </div>
+              <Item
+                name={item.name}
+                description={item.description}
+                tags={item.tags}
+                externalLinks={item.externalLinks}
+                activeTags={activeTags}
+                tagProps={tags}
+              ></Item>
             );
           })}
       </div>
