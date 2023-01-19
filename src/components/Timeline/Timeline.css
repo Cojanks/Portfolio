@@ -11,6 +11,16 @@
   position: relative;
 }
 
+.timeline--line-visual {
+  position: absolute;
+  left: 34px;
+  top: 2px;
+  bottom: 2px;
+  width: 2px;
+  background-color: #b41176;
+  border-radius: 1px;
+}
+
 .timeline--container ul.timeline--item-timeframe-list > li::before,
 .timeline--container ul li .timeline--item-extra-item::before {
   background-color: white;
@@ -73,13 +83,29 @@ ul.timeline--item-content-additional-list {
   padding-left: 30px;
   margin-top: 15px !important;
 }
+.timeline--container ul li .timeline--item-extra-item.event {
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  padding: 2px 0;
+}
+.timeline--item-extra-item.event .timeline--item-timeframe,
+.timeline--item-extra-item.event .timeline--item-content {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
 
-.timeline--line-visual {
-  position: absolute;
-  left: 34px;
-  top: 2px;
-  bottom: 2px;
-  width: 2px;
-  background-color: #b41176;
-  border-radius: 1px;
+.timeline--item-extra-item.event .timeline--item-content::before {
+  content: '';
+  border-top: 1px solid black;
+}
+
+.timeline--item-extra-item.event .timeline--item-block-arrow {
+  left: -24px;
+  top: 16px;
+}
+
+.timeline--container ul li .timeline--item-extra-item.event::before {
+  left: -49px;
+  top: 16px;
 }
