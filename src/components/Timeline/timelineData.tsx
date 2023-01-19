@@ -3,6 +3,7 @@ export const data = {
   items: [
     {
       date: '2020 - Jan',
+      isCurrent: true,
       eventType: 'work',
       content: 'Hired at Place 2',
       contentExtras: {
@@ -12,7 +13,7 @@ export const data = {
     },
     {
       date: '2019 - Dec',
-      isCurrent: true,
+
       content: 'Left Place 1',
       contentExtras: {
         type: 'list',
