@@ -85,6 +85,7 @@ const ItemList: FC<ItemListbProps> = ({ tags, items, initTagsActive = [] }) => {
           .map((item) => {
             return (
               <Item
+                key={item.name}
                 name={item.name}
                 description={item.description}
                 tags={item.tags}
