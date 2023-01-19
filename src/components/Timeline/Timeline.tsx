@@ -17,13 +17,14 @@ interface TimelineItem {
   contentExtras?: TimelineItemExtras;
   additionalTimeframeEvents?: TimelineAdditionalItem[];
 }
+// The 'type' propertiess in the next two types below would have the options like 'list' | 'image' | etc... and that would determine how the component would have displayed the things but for the sake of time, I left it open as a string
 type TimelineAdditionalItem = {
   date: string;
-  content: string;
+  content?: string;
+  type?: string;
   contentExtras?: TimelineItemExtras;
 };
 
-// The 'type' below would have the options like 'list' | 'image' | etc... and that would determine how the component would have displayed the things but for the sake of time, I left it open as a string
 type TimelineItemExtras = {
   type: string;
   list: string[];
@@ -31,6 +32,16 @@ type TimelineItemExtras = {
 
 const Timeline: FC<TimelineType> = ({ title, items }) => {
   console.log(items);
+
+  const getExtraItemClasses = (itemType: string | undefined) => {
+    let classes = 'timeline--item-extra-item';
+
+    if (itemType && itemType === 'event') {
+      classes += ' event';
+    }
+
+    return classes;
+  };
   return (
     <div className="timeline--container">
       <div className="timeline--line-visual"></div>
@@ -62,7 +73,7 @@ const Timeline: FC<TimelineType> = ({ title, items }) => {
                 {item.additionalTimeframeEvents &&
                   item.additionalTimeframeEvents.map((extraEvent) => {
                     return (
-                      <div className="timeline--item-extra-item">
+                      <div className={getExtraItemClasses(extraEvent.type)}>
                         <span className="timeline--item-block-arrow"> </span>
                         <span className="timeline--item-timeframe">
                           {extraEvent.date}
