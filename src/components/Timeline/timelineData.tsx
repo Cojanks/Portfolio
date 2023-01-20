@@ -5,7 +5,7 @@ export const data = {
       date: '2022 - Sept',
       isCurrent: true,
       eventType: 'work',
-      content: 'Vertebrae / Snap Inc',
+      content: 'Snap Inc',
       contentExtras: {
         type: 'list',
         iconList: [
