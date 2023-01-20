@@ -8,7 +8,23 @@ export const data = {
       content: 'Vertebrae / Snap Inc',
       contentExtras: {
         type: 'list',
-        list: ['derp', 'merp'],
+        iconList: [
+          {
+            icon: 'shop',
+            content:
+              'Responsible for the bespoke front-end implementation of the patented Augmented Reality, 3D, and Virtual Try-On experiences while also integrating seemlesly into an existing client web channel.',
+          },
+          {
+            icon: 'copyright',
+            content:
+              'Worked with client UX design teams to ensure that all experiences communicate a clients brand, design standards, and business objectives.',
+          },
+          {
+            icon: 'conversation',
+            content:
+              'Optimized implementation decisions and designs using A/B testing data on user interaction, user conversion information, and client feedback.',
+          },
+        ],
       },
       additionalTimeframeEvents: [
         {
@@ -28,10 +44,22 @@ export const data = {
       content: 'Charles Schwab',
       contentExtras: {
         type: 'list',
-        list: [
-          'Designed, implemented and scaled a reusable & accessible Design System which leveraged design standards from the global Schwab UX team while establishing a community-driven standard of code re-usability, readability, and quality.',
-          'Strategized future-state enterprise level JS framework solutions like a framework agnostic front end approach using Web Components.',
-          'Co-designed and rapidly developed prototypes with the global user experience team to transition hero Schwab.com components like navigation and footer from an adaptive experience to a unified responsive solution.',
+        iconList: [
+          {
+            icon: 'sitemap',
+            content:
+              'Designed, implemented and scaled a reusable & accessible Design System which leveraged design standards from the global Schwab UX team while establishing a community-driven standard of code re-usability, readability, and quality.',
+          },
+          {
+            icon: 'file code',
+            content:
+              'Strategized future-state enterprise level JS framework solutions like a framework agnostic front end approach using Web Components.',
+          },
+          {
+            icon: 'map',
+            content:
+              'Co-designed and rapidly developed prototypes with the global user experience team to transition hero Schwab.com components like navigation and footer from an adaptive experience to a unified responsive solution.',
+          },
         ],
       },
       additionalTimeframeEvents: [

@@ -109,3 +109,24 @@ ul.timeline--item-content-additional-list {
   left: -49px;
   top: 16px;
 }
+
+.timeline--item-content-additional-list i {
+  position: absolute;
+  left: -25px;
+}
+
+.timeline--item-content-additional-icon-list.timeline--item-content-additional-list {
+  padding-left: 40px;
+}
+
+.timeline--item-content-additional-list li {
+  margin-bottom: 7px;
+}
+
+.timeline--item-timeframe {
+  color: #666;
+}
+
+.timeline--item-content {
+  font-weight: bold;
+}

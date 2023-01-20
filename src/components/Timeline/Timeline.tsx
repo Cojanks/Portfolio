@@ -3,6 +3,7 @@ import React, { FC } from 'react';
 import './Timeline.css';
 
 import { CompPropsWithChildrenAndStyles } from 'types';
+import { Icon, SemanticICONS } from 'semantic-ui-react';
 
 type TimelineType = {
   title: string | React.ReactNode | JSX.Element;
@@ -27,7 +28,13 @@ type TimelineAdditionalItem = {
 
 type TimelineItemExtras = {
   type: string;
-  list: string[];
+  list?: string[];
+  iconList?: IconListType[];
+};
+
+type IconListType = {
+  icon: SemanticICONS | any;
+  content: string;
 };
 
 const Timeline: FC<TimelineType> = ({ title, items }) => {
@@ -62,10 +69,32 @@ const Timeline: FC<TimelineType> = ({ title, items }) => {
                 <div className="timeline--item-content">{item.content}</div>
                 {item.contentExtras && (
                   <div className="timeline--item-content-additional">
-                    <ul className="timeline--item-content-additional-list">
-                      {item.contentExtras.list.map((extraContent) => {
-                        return <li>{extraContent}</li>;
-                      })}
+                    <ul
+                      className={
+                        !!item.contentExtras.iconList
+                          ? 'timeline--item-content-additional-list timeline--item-content-additional-icon-list'
+                          : 'timeline--item-content-additional-list'
+                      }
+                    >
+                      {item.contentExtras.iconList &&
+                        item.contentExtras.iconList.map((iconItem, i) => {
+                          return (
+                            <li key={i}>
+                              <Icon
+                                name={
+                                  iconItem.icon === ''
+                                    ? 'angle right'
+                                    : iconItem.icon
+                                }
+                              ></Icon>{' '}
+                              {iconItem.content}
+                            </li>
+                          );
+                        })}
+                      {item.contentExtras.list &&
+                        item.contentExtras.list.map((extraContent) => {
+                          return <li>{extraContent}</li>;
+                        })}
                     </ul>
                   </div>
                 )}
