@@ -7,13 +7,13 @@ Welcome!
 
 (Mr. Gibson, please don't sue me)
 
-### Why you are here
+## Why you are here
 
 Finding the right front end developer for your company or project can be a difficult process. I have been on both sides of that journey and I can full empathize with your current task. In an effort to ease your decision, I have decided to build you this:
 
 A body of work to prove that I am the right candidate for your `engineering team` or `React-based project`.
 
-### (Ok, now for the self promotion)
+## (Ok, now for the self promotion)
 
 Your time is valuable so why don't I summarize why you should invite me to join your team or project.
 
@@ -22,7 +22,7 @@ Your time is valuable so why don't I summarize why you should invite me to join 
 - `Client-facing` collaboration & communication expertise. We engineers love to build things and building lasting relationships with clients is something I enjoy.
 - I `enjoy building unique interactions`. You have a distinctive product which you believe stands out in this market and I would love to help you make it stand out even more. Let's work together!
 
-### For you delightful technical & hiring managers
+## For you delightful technical & hiring managers
 
 You are here looking for a skilled React developer and your engineering loops will likely test proficiencies with features like `React Hooks`, `Redux/RTK`, `Validation`, `State Management`, `Componentization`, and a myriad other skills.
 
