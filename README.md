@@ -1,12 +1,12 @@
 # A Treatise in Front End Engineering Portfolios. (The Corey Jenkins Story)
 
 Welcome!
-(I know you were expecting a unique opening hook here so let me try again...)
+(Okay, you were expecting a unique opening hook here so let me try again...)
 
 'The sky above the port was the color of television, tuned to a dead channel...'
-(Mr. Gibson, please don't sue me)
+(Mr. Gibson, please dont sue me)
 
-### Why you are here on this [new Date().toLocaleString('en-us', { weekday: 'long' })]
+### Why you are here
 
 Finding the right front end developer for your company or project can be a difficult process. I have been on both sides of that journey and I can full empathize with your current task. In an effort to ease your decision, I have decided to build you this:
 
@@ -28,7 +28,15 @@ You are here looking for a skilled React developer and your engineering loops wi
 [Good News Everyone! (Yes, I left this as text as that gif + soundclip is now stuck in your head)]
 **I built this portfolio _specifically_ for you.**
 
+(Coming soon, still building these features)
+
 1. Head to my [portfolio site](https://cojanks.github.io/portfolio/)
-2. Find the section where you can filter projects, widgets, or small components which showcase my proficiencies with those same skills (listed above and many more, besides) that you are looking for!
+2. Find the section where you can filter projects, widgets, or small components by those same skillsets (listed above and many more, besides) that you are looking for!
 3. Review the many README's for these projects or components where you can view my design thinking, product deicion-making process, and opportunities where I would have improved or where/how I would have added new features.
 4. Drink some water, if you haven't already today.
+
+## Product design & thinking for this site
+
+I will be including a seciton like this in the README's for many of the components in this repo so you can see my thought process and why I built my components like I did.
+
+(Coming soon, still building these)
