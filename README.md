@@ -26,9 +26,9 @@ Your time is valuable so why don't I summarize why you should invite me to join 
 
 You are here looking for a skilled React developer and your engineering loops will likely test proficiencies with features like `React Hooks`, `Redux/RTK`, `Validation`, `State Management`, `Componentization`, and a myriad other skills.
 
-[Good News Everyone! (Yes, I left this as text as that gif + soundclip is now stuck in your head)]
+![Good News Everyone!](https://media.giphy.com/media/3zFcbgHoIXzykQc7vU/giphy.gif)
 
-`I built this portfolio _specifically_ for you.`
+`I built this portfolio specifically for you.`
 
 (Coming soon, still building these features)
 
