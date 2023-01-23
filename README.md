@@ -11,7 +11,7 @@ Welcome!
 
 Finding the right front end developer for your company or project can be a difficult process. I have been on both sides of that journey and I can full empathize with your current task. In an effort to ease your decision, I have decided to build you this:
 
-A [Portfolion & body of work](https://cojanks.github.io/portfolio/) that gives you the examples and tools to confirm that I am the right candidate for your `engineering team` or `React-based project`.
+A [Portfolio & body of work](https://cojanks.github.io/portfolio/) that gives you the examples and tools to confirm that I am the right candidate for your `engineering team` or `React-based project`.
 
 ## (Ok, now for the self promotion)
 
