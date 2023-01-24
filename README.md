@@ -33,7 +33,7 @@ You are here looking for a skilled React developer and your engineering loops wi
 1. Head to my [portfolio site](https://cojanks.github.io/portfolio/)
 2. (Coming soon, still building these features) Find the section where you can filter projects, widgets, or small components by those same skillsets (listed above and many more, besides) that you are looking for!
 3. Review the many README's for these projects or components where you can view my design thinking, product decision-making process, and opportunities where I would have improved or where/how I would have added new features.
-4. Check out the many custom components That I built for this site and try to find all the hidden easter eggs and treasures scattered around the page and code. Who said making things can't be fun?
+4. Check out the many custom components that I built for this site and try to find all the hidden easter eggs and treasures scattered around the page and code. Who said making things, even self promotion work can't be fun?
 5. Drink some water, if you haven't already today.
 
 ## Product design & thinking for this site

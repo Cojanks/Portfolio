@@ -29,8 +29,11 @@
 
 .card--subheader {
   font-size: 14px;
-  color: #888;
+  color: rgb(117, 117, 117);
   margin-top: 5px;
+}
+.card--subheader-darkmode {
+  color: rgb(177, 177, 177);
 }
 
 .card--description {

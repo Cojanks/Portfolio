@@ -8,7 +8,7 @@ function App() {
     <div>
       <IntroductionSection></IntroductionSection>
       <AboutMeSection></AboutMeSection>
-      {/* <ExamplesSection></ExamplesSection> */}
+      <ExamplesSection></ExamplesSection>
     </div>
   );
 }

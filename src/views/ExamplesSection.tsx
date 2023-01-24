@@ -19,7 +19,7 @@ function ExamplesSection() {
               Practical Examples
             </div>
             <div
-              className="card--subheader"
+              className="card--subheader-darkmode"
               style={{ fontSize: '18px', marginBottom: '15px' }}
             >
               Chekhov's '
@@ -49,6 +49,7 @@ function ExamplesSection() {
           <ItemList
             tags={listData.tags}
             items={listData.items}
+            header={listData.header}
             initTagsActive={['typescript']}
           ></ItemList>
         </div>

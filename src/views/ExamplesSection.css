@@ -1,6 +1,7 @@
 .examplesSection {
   display: flex;
-  background-color: #f7ecec;
+  background-color: #1e1f26;
+  color: white;
   justify-content: center;
   width: 100%;
   padding: 70px 30px;

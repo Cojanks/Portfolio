@@ -1,36 +1,19 @@
 import Pill from 'components/Pill/Pill';
-import React, { FC, useEffect, useState } from 'react';
-import { CompPropsWithChildrenAndStyles } from 'types';
+import React, { FC, useState } from 'react';
+import { Icon } from 'semantic-ui-react';
 import Item from './Item';
 
 import './ItemList.css';
+import { ItemListbProps } from './Types';
 
-type ItemListbProps = {
-  tags: TagTypes[];
-  initTagsActive?: string[];
-  items: ItemTypes[];
-  key?: string;
-} & CompPropsWithChildrenAndStyles;
+const ItemList: FC<ItemListbProps> = ({
+  header,
+  tags,
+  items,
+  initTagsActive = [],
+}) => {
+  const [isFilterOpen, setisFilterOpen] = useState(true);
 
-export type TagTypes = {
-  name: string;
-  color?: string;
-  textColor?: string;
-};
-
-type ItemTypes = {
-  name: string;
-  description: string;
-  tags: string[];
-  externalLinks: ExternalLinkTypes[];
-};
-
-type ExternalLinkTypes = {
-  name: string;
-  url: string;
-};
-
-const ItemList: FC<ItemListbProps> = ({ tags, items, initTagsActive = [] }) => {
   const setInitActiveTags = () => {
     let stateObj: { [key: string]: boolean } = {};
 
@@ -44,16 +27,37 @@ const ItemList: FC<ItemListbProps> = ({ tags, items, initTagsActive = [] }) => {
 
   const [activeTags, setactiveTags] = useState(setInitActiveTags);
 
+  const handleFilterClick = () => {
+    const initFilterOpen = isFilterOpen;
+    setisFilterOpen(!initFilterOpen);
+  };
+
   return (
     <div className="itemList--container">
+      <div className="itemList--header-container" style={header.styles}>
+        <h3 className="itemList--header">{header.headerText}</h3>
+        {header.headerSubtext && (
+          <p className="itemList--sub-header">{header.headerSubtext}</p>
+        )}
+      </div>
       <div className="itemList--filter-container">
-        <h3 className="itemList--filter-header">Filter By:</h3>
-        <div className="itemList--filter-pills-container">
+        <div
+          className={
+            isFilterOpen
+              ? 'itemList--filter-pills-container'
+              : 'itemList--filter-pills-container closed'
+          }
+        >
+          <span style={{ marginRight: '5px' }}>Filtered by: </span>
           {tags.map((tag) => {
+            let tagName =
+              tag.name.toLowerCase() === 'typescript'
+                ? 'Typescript (all items)'
+                : tag.name;
             return (
               <Pill
                 key={tag.name}
-                label={tag.name}
+                label={tagName}
                 color={tag.color}
                 clickable
                 onClick={() => {
@@ -68,10 +72,24 @@ const ItemList: FC<ItemListbProps> = ({ tags, items, initTagsActive = [] }) => {
                   activeTags[tag.name.toLowerCase()] ? 'filled' : 'outlined'
                 }
               >
-                {tag.name}
+                {tagName}
               </Pill>
             );
           })}
+        </div>
+
+        <div className="itemList--filter-expand" onClick={handleFilterClick}>
+          {isFilterOpen ? (
+            <>
+              <span>Close Filters </span>
+              <Icon name="angle double up"></Icon>
+            </>
+          ) : (
+            <>
+              <span>Filters </span>
+              <Icon name="angle double down"></Icon>
+            </>
+          )}
         </div>
       </div>
 
@@ -92,6 +110,7 @@ const ItemList: FC<ItemListbProps> = ({ tags, items, initTagsActive = [] }) => {
                 externalLinks={item.externalLinks}
                 activeTags={activeTags}
                 tagProps={tags}
+                itemCustomHeader={item.itemCustomHeader}
               ></Item>
             );
           })}

@@ -4,6 +4,7 @@
   border: 2px solid transparent;
   display: inline-flex;
   border-radius: 20px;
+  cursor: default;
 }
 .pill--container:hover {
   filter: brightness(90%);
@@ -12,9 +13,22 @@
   background-color: white;
 }
 .pill--container.pill--container__outlined:hover {
-  filter: brightness(200%);
+  opacity: 0.9;
 }
 
+.pill--container.pill--container__noHover,
+.pill--container.pill--container__outlined.pill--container__noHover:hover {
+  opacity: 1;
+  filter: none;
+}
 .pill--container__clickable {
   cursor: pointer;
+}
+.pill--container + .pill--container {
+  display: inline;
+  margin-left: 7px;
+}
+
+.pill--container.pill--container__square {
+  border-radius: 7px;
 }

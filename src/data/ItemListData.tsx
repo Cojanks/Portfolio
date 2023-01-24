@@ -1,27 +1,86 @@
+import React from 'react';
+
 export const listData = {
+  header: {
+    headerText: 'Projects',
+    headerSubtext:
+      'A list of projects displaying various Front-End & React-specific skillsets, filterable by the tags below',
+    styles: { backgroundColor: '#5c9d9e' },
+  },
   tags: [
-    { name: 'Typescript', color: '#123323' },
-    { name: 'Hooks', color: '#654878' },
-    { name: 'API', color: '#987444' },
+    { name: 'Typescript', color: '#204f5a' },
+    { name: 'React Hooks', color: '#283349' },
+    { name: 'API', color: '#bf4144' },
+    { name: 'Custom Component', color: '#de9542' },
+    { name: 'Validation', color: '#2d0720' },
+    { name: 'Favorite Books', color: '#fcfcfc' },
   ],
   items: [
     {
-      name: 'Grade_',
-      description: 'A grading applicartion',
-      tags: ['typescript', 'api'],
+      name: 'This Page!',
+      description:
+        'Oh hey, come here often? With the exception of the progress bar and Icons, this site is entirely custom, all components, sections, etc.',
+      tags: ['typescript', 'custom component'],
       externalLinks: [
-        { name: 'Github', url: '' },
-        { name: 'Github README', url: '' },
+        { name: 'Github', url: 'https://github.com/Cojanks/portfolio' },
+        {
+          name: 'Github README',
+          url: 'https://github.com/Cojanks/portfolio/blob/main/README.md',
+        },
       ],
     },
     {
-      name: 'Derp',
-      description: 'derp derp',
-      tags: ['typescript', 'Hooks'],
-      externalLinks: [
-        { name: 'Github', url: '' },
-        { name: 'Github README', url: '' },
-      ],
+      name: 'More coming soon',
+      description:
+        'Building a BETTER FUTURE (Portfolio)! (I will be adding more as soon as I can, lots to come)',
+      tags: ['typescript', 'React Hooks', 'custom component', 'api'],
+    },
+    {
+      name: 'House of Leaves',
+      itemCustomHeader: (
+        <h4>
+          House of Leaves{' '}
+          <span
+            style={{ color: '#a6a6a6', fontSize: '16px', marginLeft: '5px' }}
+          >
+            by Mark Z. Danielewsi
+          </span>
+        </h4>
+      ),
+      description:
+        'If you are looking for a truly unique novel that not only confronts the medium of novels & books, meta-awareness in storytelling, unreliable narrators, and some slow burn cosmic horror wrapped around a mystery, get this book (a physical copy).',
+      tags: ['Favorite Books'],
+    },
+    {
+      name: 'Children of Time',
+      itemCustomHeader: (
+        <h4>
+          Children of Time{' '}
+          <span
+            style={{ color: '#a6a6a6', fontSize: '16px', marginLeft: '5px' }}
+          >
+            by Adrian Tchaikovsky
+          </span>
+        </h4>
+      ),
+      description:
+        'First in a trilogy, a saga of uplifting a species of spider to a space-faring civilation... Imaginative and incredible',
+      tags: ['Favorite Books'],
+    },
+    {
+      name: 'The First Fifteen Lives of Harry August',
+      itemCustomHeader: (
+        <h4>
+          The First Fifteen Lives of Harry August{' '}
+          <span
+            style={{ color: '#a6a6a6', fontSize: '16px', marginLeft: '5px' }}
+          >
+            by Claire North
+          </span>
+        </h4>
+      ),
+      description: 'A unique take on time loops, simply a great story. ',
+      tags: ['Favorite Books'],
     },
   ],
 };

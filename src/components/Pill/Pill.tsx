@@ -9,16 +9,21 @@ type PillProps = {
   textColor?: string;
   clickable?: boolean;
   variant?: 'outlined' | 'filled';
+  shape?: 'rounded' | 'square';
+  noHover?: boolean;
 } & CompPropsWithChildrenAndStyles &
   CompPropsWithOnClick;
 
 const Pill: FC<PillProps> = ({
   children,
   variant = 'outlined',
+  shape = 'rounded',
   color,
   textColor,
   clickable = false,
+  noHover = false,
   onClick,
+  styles,
 }) => {
   const getClasses = () => {
     let classes = 'pill--container';
@@ -31,25 +36,33 @@ const Pill: FC<PillProps> = ({
       classes += ' pill--container__clickable';
     }
 
+    if (noHover) {
+      classes += ' pill--container__noHover';
+    }
+
+    if (shape === 'square') {
+      classes += ' pill--container__square';
+    }
+
     return classes;
   };
 
   const getStyles = () => {
-    let styles: any = {};
+    let stylesObj: any = styles ? styles : {};
 
     if (variant === 'filled') {
-      styles.backgroundColor = color;
-      styles.borderColor = color;
+      stylesObj.backgroundColor = color;
+      stylesObj.borderColor = color;
 
       textColor === undefined || textColor === 'undefined'
-        ? (styles.color = 'white')
-        : (styles.color = textColor);
+        ? (stylesObj.color = 'white')
+        : (stylesObj.color = textColor);
     } else {
-      styles.backgroundColor = 'white';
-      styles.color = color;
-      styles.borderColor = color;
+      stylesObj.backgroundColor = 'white';
+      stylesObj.color = color;
+      stylesObj.borderColor = color;
     }
-    return styles;
+    return stylesObj;
   };
 
   return (
