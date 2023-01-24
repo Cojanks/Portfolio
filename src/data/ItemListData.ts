@@ -20,7 +20,7 @@ export const listData = {
     { name: 'App Views', color: '#de9542', id: '12' },
     { name: 'Favorite Books', color: '#fcfcfc', id: '13' },
   ],
-  initActiveTags: ['1'],
+  secretTags: ['Favorite Books'],
   items: [
     {
       id: '1',

@@ -17,6 +17,8 @@
 .itemList--content-container {
   padding: 25px 30px;
   max-height: 800px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 .itemList--header {
   font-size: 24px;
