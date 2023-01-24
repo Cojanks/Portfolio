@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Tab from 'components/Tab/Tab';
 import ProfileCard from 'components/ProfileCard/ProfileCard';
 import { profileCardList } from 'data/data';

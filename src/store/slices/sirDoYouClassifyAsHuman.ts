@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export type InitialStateProps = {
   areYouAMeatBag: boolean;
   lifeform: string;
+  whatsHisName: string;
 };
 
 const isHuman = !!localStorage.getItem('isHuman');
@@ -11,6 +12,7 @@ console.log('isHuman: ' + isHuman);
 const initialState: InitialStateProps = {
   areYouAMeatBag: isHuman,
   lifeform: '',
+  whatsHisName: 'Dade Murphy',
 };
 
 export const sirDoYouClassifyAsHumanSlice = createSlice({
