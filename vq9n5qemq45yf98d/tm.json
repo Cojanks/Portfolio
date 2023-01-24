@@ -2,8 +2,18 @@
   "title": "Experience",
   "items": [
     {
-      "date": "2022 - Sept",
+      "date": "?",
       "isCurrent": true,
+      "eventType": "work",
+      "content": "Your digital products",
+      "additionalTimeframeEvents": [
+        {
+          "date": "2023..."
+        }
+      ]
+    },
+    {
+      "date": "2022 - Sept",
       "eventType": "work",
       "content": "Snap Inc",
       "contentExtras": {
