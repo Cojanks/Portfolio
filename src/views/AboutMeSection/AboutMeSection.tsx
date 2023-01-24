@@ -18,7 +18,7 @@ function AboutMeSection() {
             <ProfileCard
               image={process.env.PUBLIC_URL + '/vq9n5qemq45yf98d/cjp.jpeg'}
               header={'Corey Jenkins'}
-              subheader={'Font End Engineer'}
+              subheader={'Front End Engineer'}
               description={
                 'Corey is a Front-End / UX Engineer based in Austin, TX'
               }
