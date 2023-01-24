@@ -8,7 +8,7 @@ export type InitialStateProps = {
 };
 
 const isHuman = !!localStorage.getItem('isHuman');
-console.log('isHuman: ' + isHuman);
+console.log('Detecting if Human: ' + isHuman);
 
 const initialState: InitialStateProps = {
   IWonderHowManyWillFindThisState: 'Well, you did! (Seriously though, hire me)',

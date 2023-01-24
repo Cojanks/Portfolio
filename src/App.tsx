@@ -8,12 +8,16 @@ function App() {
   console.log('Accessing personal email...');
   console.log("Setting default to 'Reply All'...");
   console.log('Ordering entire Nicolas Cage filmography to home address...');
+  console.log('-----------------------------------------------------------');
+  console.log(
+    "Ok, I have hidden things all over this page & it's code, some obvious, some not. Good luck, adventurer! "
+  );
   return (
-    <div>
+    <>
       <IntroductionSection></IntroductionSection>
       <AboutMeSection></AboutMeSection>
       <ExamplesSection></ExamplesSection>
-    </div>
+    </>
   );
 }
 

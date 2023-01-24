@@ -7,7 +7,7 @@ import './ExamplesSection.css';
 
 function ExamplesSection() {
   return (
-    <div className="examplesSection">
+    <section className="examplesSection">
       <div className="ui one column centered grid responsiveGridContainer">
         <div className="ui fifteen wide column tablet sixteen wide column">
           <div className="examplesHeader">
@@ -54,7 +54,7 @@ function ExamplesSection() {
           ></ItemList>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
