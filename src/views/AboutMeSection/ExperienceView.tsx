@@ -12,7 +12,7 @@ function ExperienceView() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        'http://localhost:3000/portfolio/vq9n5qemq45yf98d/tm.json'
+        'https://cojanks.github.io/portfolio/vq9n5qemq45yf98d/tm.json'
       );
 
       if (!response.ok) {

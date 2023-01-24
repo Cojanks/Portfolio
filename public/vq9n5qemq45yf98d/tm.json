@@ -6,7 +6,20 @@
       "isCurrent": true,
       "eventType": "work",
       "position": "Front End Engineer",
-      "content": "Your digital products",
+      "content": "Your Company",
+      "contentExtras": {
+        "type": "list",
+        "iconList": [
+          {
+            "icon": "calendar check",
+            "content": "Let's discuss what you're looking for and the many things we can build together."
+          },
+          {
+            "icon": "coffee",
+            "content": "(Ready to justify my coffe addiction)"
+          }
+        ]
+      },
       "additionalTimeframeEvents": [
         {
           "date": "2023..."
