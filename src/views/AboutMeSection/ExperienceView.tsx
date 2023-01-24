@@ -1,4 +1,3 @@
-import List from 'components/List/List';
 import Timeline from 'components/Timeline/Timeline';
 import React, { useEffect, useState } from 'react';
 
@@ -7,14 +6,13 @@ import { TimelineType } from 'components/Timeline/Types';
 import ErrorMessage from 'components/ErrorMessage/ErrorMessage';
 
 function ExperienceView() {
-  // TODO add in API call to live json file in github pages with good loading message
   const [timeLineData, settimeLineData] = useState<TimelineType>();
   const [hasError, sethasError] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        'https://cojanks.github.io/portfolio/vq9n5qemq45yf98d/tm.json'
+        'http://localhost:3000/portfolio/vq9n5qemq45yf98d/tm.json'
       );
 
       if (!response.ok) {

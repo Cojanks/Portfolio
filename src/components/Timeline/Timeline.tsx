@@ -4,6 +4,7 @@ import './Timeline.css';
 import { Icon } from 'semantic-ui-react';
 
 import { TimelineType } from './Types';
+import Pill from 'components/Pill/Pill';
 
 const Timeline: FC<TimelineType> = ({ title, items }) => {
   const getExtraItemClasses = (itemType: string | undefined) => {
@@ -31,8 +32,23 @@ const Timeline: FC<TimelineType> = ({ title, items }) => {
                 }
               >
                 <span className="timeline--item-block-arrow"></span>
+                <div className="timeline--item-info-section"></div>
                 <span className="timeline--item-timeframe">{item.date}</span>
                 <div className="timeline--item-content">{item.content}</div>
+
+                {item.position && (
+                  <div className="timeline--item-cta">
+                    <Pill
+                      label={item.position}
+                      variant="filled"
+                      color="rgb(42 51 74)"
+                      shape="square"
+                      noHover
+                    >
+                      {item.position}
+                    </Pill>
+                  </div>
+                )}
                 {item.contentExtras && (
                   <div className="timeline--item-content-additional">
                     <ul
@@ -64,7 +80,6 @@ const Timeline: FC<TimelineType> = ({ title, items }) => {
                     </ul>
                   </div>
                 )}
-
                 {item.additionalTimeframeEvents &&
                   item.additionalTimeframeEvents.map((extraEvent, i) => {
                     return (

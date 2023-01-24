@@ -26,6 +26,7 @@ export type ItemType = {
   name: string;
   description?: string;
   itemCustomHeader?: { header: string; subHeader: string };
+  type?: 'link' | 'modal';
   secret?: boolean;
   tags: string[];
   activeTags?: { [key: string]: boolean };

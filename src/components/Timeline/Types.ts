@@ -11,6 +11,7 @@ interface TimelineItem {
   isCurrent?: boolean;
   eventType?: string;
   content: string;
+  position?: string;
   contentExtras?: TimelineItemExtras;
   additionalTimeframeEvents?: TimelineAdditionalItem[];
 }

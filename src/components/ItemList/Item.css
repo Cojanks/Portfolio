@@ -21,3 +21,8 @@
 .item--footer-tags {
   align-items: center;
 }
+
+.item--info {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,5 +1,6 @@
+import Modal from 'components/Modal/Modal';
 import Pill from 'components/Pill/Pill';
-import React, { FC } from 'react';
+import React, { useState, FC } from 'react';
 
 import './Item.css';
 import { ItemType } from './Types';
@@ -14,6 +15,7 @@ const Item: FC<ItemType> = ({
   itemCustomHeader,
   secret,
 }) => {
+  const [isModalOpen, setisModalOpen] = useState(false);
   let tagObj: { [key: string]: string } = {};
 
   const createTagObj = () => {
@@ -30,23 +32,26 @@ const Item: FC<ItemType> = ({
       <div className="item--main-section">
         <div className="item--img-container"></div>
         <div className="item--info">
-          {itemCustomHeader ? (
-            <h4>
-              {itemCustomHeader.subHeader}{' '}
-              <span
-                style={{
-                  color: '#a6a6a6',
-                  fontSize: '16px',
-                  marginLeft: '5px',
-                }}
-              >
-                by {itemCustomHeader.subHeader}
-              </span>
-            </h4>
-          ) : (
-            <h4>{name}</h4>
-          )}
-          <p>{description}</p>
+          <div className="item--info-content">
+            {itemCustomHeader ? (
+              <h4>
+                {itemCustomHeader.subHeader}{' '}
+                <span
+                  style={{
+                    color: '#a6a6a6',
+                    fontSize: '16px',
+                    marginLeft: '5px',
+                  }}
+                >
+                  by {itemCustomHeader.subHeader}
+                </span>
+              </h4>
+            ) : (
+              <h4>{name}</h4>
+            )}
+            <p>{description}</p>
+          </div>
+          <div className="item--info-cta"></div>
         </div>
         <div className="item--extras"></div>
       </div>
@@ -100,6 +105,7 @@ const Item: FC<ItemType> = ({
           })}
         </div>
       </div>
+      {isModalOpen && <Modal></Modal>}
     </div>
   );
 };
