@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Tab from 'components/Tab/Tab';
 import ProfileCard from 'components/ProfileCard/ProfileCard';
 import { profileCardList } from 'data/data';
@@ -16,7 +16,7 @@ function AboutMeSection() {
         <div className="five wide column">
           <div className="cardContainer">
             <ProfileCard
-              image={process.env.PUBLIC_URL + '/assets/profilePicture.jpeg'}
+              image={process.env.PUBLIC_URL + '/vq9n5qemq45yf98d/cjp.jpeg'}
               header={'Corey Jenkins'}
               subheader={'Font End Engineer'}
               description={
