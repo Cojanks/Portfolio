@@ -5,6 +5,7 @@
       "date": "?",
       "isCurrent": true,
       "eventType": "work",
+      "position": "Front End Engineer",
       "content": "Your digital products",
       "additionalTimeframeEvents": [
         {
@@ -16,6 +17,7 @@
       "date": "2022 - Sept",
       "eventType": "work",
       "content": "Snap Inc",
+      "position": "Front End Developer / Contributing Engineer",
       "contentExtras": {
         "type": "list",
         "iconList": [
@@ -49,6 +51,7 @@
       "date": "2019 - December",
 
       "content": "Charles Schwab",
+      "position": "Design Technologist",
       "contentExtras": {
         "type": "list",
         "iconList": [
