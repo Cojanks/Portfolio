@@ -1,11 +1,11 @@
 import { CompPropsWithChildrenAndStyles, CompPropsWithOnClick } from 'types';
 
 // Item List Types
-export type ItemListbProps = {
+export type ItemListProps = {
   header: HeaderType;
   tags: TagTypes[];
   initTagsActive?: string[];
-  items: ItemTypes[];
+  items: ItemType[];
   key?: string;
 } & CompPropsWithChildrenAndStyles;
 
@@ -21,27 +21,15 @@ export type TagTypes = {
   textColor?: string;
 };
 
-type ItemTypes = {
-  name: string;
-  itemCustomHeader?: any;
-  description: string;
-  tags: string[];
-  externalLinks?: ExternalLinkTypes[];
-};
-
-type ExternalLinkTypes = {
-  name: string;
-  url: string;
-};
-
 // Item Types
 export type ItemType = {
   name: string;
   description?: string;
-  itemCustomHeader?: string | React.ReactNode | JSX.Element;
+  itemCustomHeader?: { header: string; subHeader: string };
+  secret?: boolean;
   tags: string[];
-  activeTags: { [key: string]: boolean };
-  tagProps: TagTypes[];
+  activeTags?: { [key: string]: boolean };
+  tagProps?: TagTypes[];
   externalLinks?: ItemLinkTypes[];
 } & CompPropsWithChildrenAndStyles &
   CompPropsWithOnClick;

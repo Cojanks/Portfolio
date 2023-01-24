@@ -9,14 +9,15 @@ const Item: FC<ItemType> = ({
   description,
   tags,
   externalLinks,
-  activeTags,
-  tagProps,
+  activeTags = {},
+  tagProps = [],
   itemCustomHeader,
+  secret,
 }) => {
   let tagObj: { [key: string]: string } = {};
 
   const createTagObj = () => {
-    tagProps.map((tag) => {
+    tagProps.forEach((tag) => {
       let name = tag.name.toLowerCase();
       tagObj[name] = tag.color!;
     });
@@ -29,7 +30,22 @@ const Item: FC<ItemType> = ({
       <div className="item--main-section">
         <div className="item--img-container"></div>
         <div className="item--info">
-          {itemCustomHeader ? itemCustomHeader : <h4>{name}</h4>}
+          {itemCustomHeader ? (
+            <h4>
+              {itemCustomHeader.subHeader}{' '}
+              <span
+                style={{
+                  color: '#a6a6a6',
+                  fontSize: '16px',
+                  marginLeft: '5px',
+                }}
+              >
+                by {itemCustomHeader.subHeader}
+              </span>
+            </h4>
+          ) : (
+            <h4>{name}</h4>
+          )}
           <p>{description}</p>
         </div>
         <div className="item--extras"></div>
@@ -65,7 +81,9 @@ const Item: FC<ItemType> = ({
         </div>
         <div className="item--footer-tags">
           {' '}
-          <span style={{ marginRight: '5px' }}>Features: </span>
+          <span style={{ marginRight: '5px' }}>
+            {secret ? 'Found a secret? This is tagged:' : 'Features:'}{' '}
+          </span>
           {tags.map((tag) => {
             let name = tag.toLowerCase();
             return (
@@ -73,7 +91,7 @@ const Item: FC<ItemType> = ({
                 key={name}
                 label={name}
                 variant={activeTags[name] ? 'filled' : 'outlined'}
-                color={tagObj[name]}
+                color={secret ? '#666' : tagObj[name]}
                 noHover
               >
                 {name}

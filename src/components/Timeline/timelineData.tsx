@@ -1,5 +1,5 @@
 export const data = {
-  title: 'Experence',
+  title: 'Experience',
   items: [
     {
       date: '2022 - Sept',

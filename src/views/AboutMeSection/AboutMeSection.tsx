@@ -18,8 +18,10 @@ function AboutMeSection() {
             <ProfileCard
               image={process.env.PUBLIC_URL + '/assets/profilePicture.jpeg'}
               header={'Corey Jenkins'}
-              subheader={'Design Technologist'}
-              description={'Corey is a Front End Developer based in Austin, TX'}
+              subheader={'Font End Engineer'}
+              description={
+                'Corey is a Front-End / UX Engineer based in Austin, TX'
+              }
               clickableDrawer
             >
               <List items={profileCardList}></List>

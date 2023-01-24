@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const listData = {
   header: {
     headerText: 'Projects',
@@ -37,50 +35,35 @@ export const listData = {
     },
     {
       name: 'House of Leaves',
-      itemCustomHeader: (
-        <h4>
-          House of Leaves{' '}
-          <span
-            style={{ color: '#a6a6a6', fontSize: '16px', marginLeft: '5px' }}
-          >
-            by Mark Z. Danielewsi
-          </span>
-        </h4>
-      ),
+      itemCustomHeader: {
+        header: 'House of Leaves',
+        subHeader: 'Mark Z. Danielewsi',
+      },
       description:
         'If you are looking for a truly unique novel that not only confronts the medium of novels & books, meta-awareness in storytelling, unreliable narrators, and some slow burn cosmic horror wrapped around a mystery, get this book (a physical copy).',
       tags: ['Favorite Books'],
+      secret: true,
     },
     {
       name: 'Children of Time',
-      itemCustomHeader: (
-        <h4>
-          Children of Time{' '}
-          <span
-            style={{ color: '#a6a6a6', fontSize: '16px', marginLeft: '5px' }}
-          >
-            by Adrian Tchaikovsky
-          </span>
-        </h4>
-      ),
+      itemCustomHeader: {
+        header: 'Children of Time',
+        subHeader: 'Adrian Tchaikovsky',
+      },
       description:
         'First in a trilogy, a saga of uplifting a species of spider to a space-faring civilation... Imaginative and incredible',
       tags: ['Favorite Books'],
+      secret: true,
     },
     {
       name: 'The First Fifteen Lives of Harry August',
-      itemCustomHeader: (
-        <h4>
-          The First Fifteen Lives of Harry August{' '}
-          <span
-            style={{ color: '#a6a6a6', fontSize: '16px', marginLeft: '5px' }}
-          >
-            by Claire North
-          </span>
-        </h4>
-      ),
+      itemCustomHeader: {
+        header: 'The First Fifteen Lives of Harry August',
+        subHeader: 'Claire North',
+      },
       description: 'A unique take on time loops, simply a great story. ',
       tags: ['Favorite Books'],
+      secret: true,
     },
   ],
 };

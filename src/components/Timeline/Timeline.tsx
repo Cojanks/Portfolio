@@ -6,12 +6,12 @@ import { CompPropsWithChildrenAndStyles } from 'types';
 import { Icon, SemanticICONS } from 'semantic-ui-react';
 
 type TimelineType = {
-  title: string | React.ReactNode | JSX.Element;
+  title: string;
   items: TimelineItem[];
 } & CompPropsWithChildrenAndStyles;
 
 interface TimelineItem {
-  date: string | React.ReactNode | JSX.Element;
+  date: string;
   isCurrent?: boolean;
   eventType?: string;
   content: string;
@@ -38,8 +38,6 @@ type IconListType = {
 };
 
 const Timeline: FC<TimelineType> = ({ title, items }) => {
-  console.log(items);
-
   const getExtraItemClasses = (itemType: string | undefined) => {
     let classes = 'timeline--item-extra-item';
 
@@ -100,9 +98,12 @@ const Timeline: FC<TimelineType> = ({ title, items }) => {
                 )}
 
                 {item.additionalTimeframeEvents &&
-                  item.additionalTimeframeEvents.map((extraEvent) => {
+                  item.additionalTimeframeEvents.map((extraEvent, i) => {
                     return (
-                      <div className={getExtraItemClasses(extraEvent.type)}>
+                      <div
+                        className={getExtraItemClasses(extraEvent.type)}
+                        key={i}
+                      >
                         <span className="timeline--item-block-arrow"> </span>
                         <span className="timeline--item-timeframe">
                           {extraEvent.date}

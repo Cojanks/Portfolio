@@ -37,6 +37,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  border-bottom: 2px solid #595959;
 }
 .itemList--header {
   margin: 15px 0 0 0 !important;

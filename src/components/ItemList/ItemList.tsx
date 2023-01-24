@@ -4,9 +4,9 @@ import { Icon } from 'semantic-ui-react';
 import Item from './Item';
 
 import './ItemList.css';
-import { ItemListbProps } from './Types';
+import { ItemListProps } from './Types';
 
-const ItemList: FC<ItemListbProps> = ({
+const ItemList: FC<ItemListProps> = ({
   header,
   tags,
   items,
@@ -17,7 +17,7 @@ const ItemList: FC<ItemListbProps> = ({
   const setInitActiveTags = () => {
     let stateObj: { [key: string]: boolean } = {};
 
-    tags.map((tag) => {
+    tags.forEach((tag) => {
       let name = tag.name.toLowerCase();
       stateObj[name] = initTagsActive.includes(name);
     });
@@ -111,6 +111,7 @@ const ItemList: FC<ItemListbProps> = ({
                 activeTags={activeTags}
                 tagProps={tags}
                 itemCustomHeader={item.itemCustomHeader}
+                secret={item.secret}
               ></Item>
             );
           })}
