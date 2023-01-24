@@ -35,11 +35,3 @@ export const profileCardList = [
     content: <div className="typography-grey">Bike Commuter</div>,
   },
 ];
-
-export const aboutMeExperienceList = [
-  {
-    icon: 'check',
-    iconColor: 'teal',
-    content: <div className="typography-grey">Verified Human</div>,
-  },
-];
