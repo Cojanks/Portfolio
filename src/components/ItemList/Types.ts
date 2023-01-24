@@ -16,6 +16,7 @@ type HeaderType = {
 };
 
 export type TagTypes = {
+  id: string;
   name: string;
   color?: string;
   textColor?: string;
@@ -23,6 +24,7 @@ export type TagTypes = {
 
 // Item Types
 export type ItemType = {
+  id: string;
   name: string;
   description?: string;
   itemCustomHeader?: { header: string; subHeader: string };

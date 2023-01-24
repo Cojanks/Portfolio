@@ -103,7 +103,8 @@ const ItemList: FC<ItemListProps> = ({
           .map((item) => {
             return (
               <Item
-                key={item.name}
+                id={item.id}
+                key={item.id}
                 name={item.name}
                 description={item.description}
                 tags={item.tags}

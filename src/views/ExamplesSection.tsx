@@ -9,7 +9,7 @@ function ExamplesSection() {
   return (
     <div className="examplesSection">
       <div className="ui one column centered grid responsiveGridContainer">
-        <div className="ui fifteen wide column">
+        <div className="ui fifteen wide column tablet sixteen wide column">
           <div className="examplesHeader">
             {' '}
             <div

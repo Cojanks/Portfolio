@@ -11,3 +11,9 @@
   text-align: left;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .examplesSection {
+    padding: 40px 0px;
+  }
+}

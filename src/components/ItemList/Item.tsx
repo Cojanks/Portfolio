@@ -6,6 +6,7 @@ import './Item.css';
 import { ItemType } from './Types';
 
 const Item: FC<ItemType> = ({
+  id,
   name,
   description,
   tags,

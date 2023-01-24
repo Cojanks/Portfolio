@@ -18,8 +18,19 @@
   display: flex;
 }
 
+.item--footer-links {
+  flex-wrap: wrap;
+  align-content: flex-start;
+  row-gap: 4px;
+}
+
 .item--footer-tags {
   align-items: center;
+  width: 60%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  row-gap: 4px;
 }
 
 .item--info {
