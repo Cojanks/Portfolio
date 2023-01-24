@@ -14,10 +14,10 @@ export const listData = {
     { name: 'State Management', color: '#283349', id: '6' },
     { name: 'API', color: '#bf4144', id: '7' },
     { name: 'Programming Acronym', color: '#bf4144', id: '8' },
-    { name: 'Validation', color: '#de9542', id: '9' },
-    { name: 'Error Handling', color: '#de9542', id: '10' },
-    { name: 'App Views', color: '#de9542', id: '11' },
-    { name: '??', color: '#2d0720', id: '12' },
+    { name: 'Strict Typing', color: '#bf4144', id: '9' },
+    { name: 'Validation', color: '#de9542', id: '10' },
+    { name: 'Error Handling', color: '#de9542', id: '11' },
+    { name: 'App Views', color: '#de9542', id: '12' },
     { name: 'Favorite Books', color: '#fcfcfc', id: '13' },
   ],
   initActiveTags: ['1'],
@@ -29,7 +29,7 @@ export const listData = {
         'Oh hey, come here often? With the exception of the progress bar and Icons, this site is entirely custom, with all custom components, sections, views, etc.',
       tags: ['typescript', 'full app', 'custom component', 'app views'],
       externalLinks: [
-        { name: 'Github', url: 'https://github.com/Cojanks/portfolio' },
+        { name: 'Github Repo', url: 'https://github.com/Cojanks/portfolio' },
         {
           name: 'README',
           url: 'https://github.com/Cojanks/portfolio/blob/main/README.md',
@@ -52,6 +52,10 @@ export const listData = {
       ],
       externalLinks: [
         {
+          name: 'Github Repo',
+          url: 'https://github.com/Cojanks/portfolio/tree/main/src/views',
+        },
+        {
           name: 'README',
           url: 'https://github.com/Cojanks/portfolio/blob/main/src/components/ProfileCard/README.md',
         },
@@ -61,8 +65,17 @@ export const listData = {
       id: '3',
       name: '[Item List] - (This component)',
       description: 'A tag-based filterable list component',
-      tags: ['typescript', 'custom component', 'state management'],
+      tags: [
+        'typescript',
+        'custom component',
+        'state management',
+        'Strict Typing',
+      ],
       externalLinks: [
+        {
+          name: 'Github Repo',
+          url: 'https://github.com/Cojanks/portfolio/tree/main/src/components/ItemList',
+        },
         {
           name: 'README',
           url: 'https://github.com/Cojanks/portfolio/blob/main/src/components/ItemList/README.md',
@@ -73,9 +86,13 @@ export const listData = {
       id: '4',
       name: '[Tab] Component - (above)',
       description:
-        'A container component that can change content based on the active tab. This content can be of type `string` |` React.ReactNode` | `JSX.Element` which gives a lot of flexability to developers. How I implemented this was with individual view components one of which fetches data from a static API to hydrate a [Timeline] component',
+        'A container component that can change content based on the active tab. This content can be of type [`string` |` React.ReactNode` | `JSX.Element`] which gives a lot of flexability to developers. How I implemented this was with individual view components one of which fetches data from a static API to hydrate a [Timeline] component',
       tags: ['typescript', 'custom component', 'state management'],
       externalLinks: [
+        {
+          name: 'Github Repo',
+          url: 'https://github.com/Cojanks/portfolio/tree/main/src/components/Tab',
+        },
         {
           name: 'README',
           url: 'https://github.com/Cojanks/portfolio/blob/main/src/components/Tab/README.md',
@@ -86,8 +103,12 @@ export const listData = {
       id: '5',
       name: "[Timeine] Component - (seen within the 'Experience' tab above)",
       description: 'A visual time components with much of the content able to ',
-      tags: ['typescript', 'custom component', 'api'],
+      tags: ['typescript', 'custom component', 'api', 'Strict Typing'],
       externalLinks: [
+        {
+          name: 'Github Repo',
+          url: 'https://github.com/Cojanks/portfolio/tree/main/src/components/Timeline',
+        },
         {
           name: 'README',
           url: 'https://github.com/Cojanks/portfolio/blob/main/src/components/Timeline/README.md',
@@ -100,6 +121,10 @@ export const listData = {
       description: 'A tag-based filterable list component',
       tags: ['typescript', 'custom component', 'state management'],
       externalLinks: [
+        {
+          name: 'Github Repo',
+          url: 'https://github.com/Cojanks/portfolio/tree/main/src/components/ProfileCard',
+        },
         {
           name: 'README',
           url: 'https://github.com/Cojanks/portfolio/blob/main/src/components/ProfileCard/README.md',
