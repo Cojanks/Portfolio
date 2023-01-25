@@ -27,7 +27,7 @@ export const listData = {
       name: 'This whole page application',
       description:
         'Oh hey, come here often? With the exception of the progress bar and Icons, this site is entirely custom, with all custom components, sections, views, etc.',
-      tags: ['typescript', 'full app', 'custom component', 'app views'],
+      tags: ['typescript', 'full app', 'app views'],
       externalLinks: [
         { name: 'Github Repo', url: 'https://github.com/Cojanks/portfolio' },
         {

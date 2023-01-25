@@ -50,7 +50,7 @@ function ExamplesSection() {
             tags={listData.tags}
             items={listData.items}
             header={listData.header}
-            initTagsActive={['typescript']}
+            initTagsActive={['custom component', 'api', 'app views']}
           ></ItemList>
         </div>
       </div>
