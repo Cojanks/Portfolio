@@ -38,7 +38,12 @@ const ItemList: FC<ItemListProps> = ({
         <h3 className="itemList--header">{header.headerText}</h3>
         {header.headerSubtext && (
           <p className="itemList--sub-header">
-            {header.headerSubtext}
+            {header.headerSubtext}{' '}
+            <div style={{ marginTop: '5px' }}>
+              The filters are additive, so if any item has at least one tag
+              active, it will be shown. - (Select 'Typescript' to see the entire
+              list.)
+            </div>
             <div style={{ marginTop: '5px' }}>
               <b>
                 [ NOTE: Some of these tags do not have items yet, I am working
