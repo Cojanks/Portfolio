@@ -16,13 +16,14 @@ function AboutMeSection() {
         <div className="five wide column">
           <div className="cardContainer">
             <ProfileCard
-              image={process.env.PUBLIC_URL + '/assets/alienProfile.jpeg'}
+              image={process.env.PUBLIC_URL + '/assets/Tom.jpeg'}
               header={'Corey Jenkins'}
               subheader={'Front End Engineer'}
               description={
                 'Corey is a Front-End / UX Engineer based in Austin, TX'
               }
               clickableDrawer
+              pictureHoverText="No, I am not actually Tom from MySpace."
             >
               <List items={profileCardList}></List>
             </ProfileCard>

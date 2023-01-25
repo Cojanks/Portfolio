@@ -10,6 +10,7 @@ type ProfileCardProps = {
   subheader?: string;
   description?: string;
   clickableDrawer?: boolean;
+  pictureHoverText?: string;
 } & CompPropsWithChildrenAndStyles;
 
 const ProfileCard: FC<ProfileCardProps> = ({
@@ -21,16 +22,42 @@ const ProfileCard: FC<ProfileCardProps> = ({
   description,
   children,
   styles,
+  pictureHoverText,
 }) => {
   const [isExtrasOpen, setisExtrasOpen] = useState(false);
+  const [isPictureHovered, setisPictureHovered] = useState(false);
 
   const handleDrawerOpen = () => {
     setisExtrasOpen(!isExtrasOpen);
   };
 
+  const handleHoverChange = (e: any) => {
+    if (pictureHoverText) {
+      e.preventDefault();
+      const newSt = !isPictureHovered;
+      setisPictureHovered(newSt);
+    }
+  };
+
   return (
     <div className="card--container" style={styles}>
-      <div className="card--image">
+      <div
+        className="card--image"
+        onMouseEnter={(e) => handleHoverChange(e)}
+        onMouseLeave={(e) => handleHoverChange(e)}
+      >
+        {pictureHoverText && (
+          <div
+            className={
+              isPictureHovered
+                ? 'card--image-overlay visible'
+                : 'card--image-overlay'
+            }
+          >
+            <span>{pictureHoverText}</span>
+          </div>
+        )}
+
         <img src={image} alt={imageAlt}></img>
       </div>
       <div className="card--descriptionSection">
