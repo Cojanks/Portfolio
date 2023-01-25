@@ -37,7 +37,15 @@ const ItemList: FC<ItemListProps> = ({
       <div className="itemList--header-container" style={header.styles}>
         <h3 className="itemList--header">{header.headerText}</h3>
         {header.headerSubtext && (
-          <p className="itemList--sub-header">{header.headerSubtext}</p>
+          <p className="itemList--sub-header">
+            {header.headerSubtext}
+            <div style={{ marginTop: '5px' }}>
+              <b>
+                [ NOTE: Some of these tags do not have items yet, I am working
+                to get them in as soon as I can! ]
+              </b>
+            </div>
+          </p>
         )}
       </div>
       <div className="itemList--filter-container">
