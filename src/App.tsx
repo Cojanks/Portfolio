@@ -1,3 +1,4 @@
+import ProveYourHumanity from 'components/ProveYourHumanity/ProveYourHumanity';
 import React from 'react';
 import AboutMeSection from 'views/AboutMeSection/AboutMeSection';
 import ExamplesSection from 'views/ExamplesSection';
@@ -6,7 +7,7 @@ import IntroductionSection from 'views/IntroductionSection';
 function App() {
   console.log('H4X0r m41nFr4m3...');
   console.log('Accessing personal email...');
-  console.log("Setting default to 'Reply All'...");
+  console.log("Setting default email reponse to 'Reply All'...");
   console.log('Ordering entire Nicolas Cage filmography to home address...');
   console.log('-----------------------------------------------------------');
   console.log(
@@ -14,6 +15,7 @@ function App() {
   );
   return (
     <>
+      <ProveYourHumanity></ProveYourHumanity>
       <IntroductionSection></IntroductionSection>
       <AboutMeSection></AboutMeSection>
       <ExamplesSection></ExamplesSection>

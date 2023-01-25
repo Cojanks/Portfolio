@@ -25,7 +25,6 @@
   cursor: pointer;
 }
 .pill--container + .pill--container {
-  display: inline;
   margin-left: 7px;
 }
 

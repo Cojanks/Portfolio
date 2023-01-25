@@ -9,16 +9,16 @@ Welcome!
 
 ## Why you are here
 
-Finding the right front end developer for your company or project can be a difficult process. I have been on both sides of that journey and I can full empathize with your current task. In an effort to ease your decision, I have decided to build you this:
+Finding the right front end developer for your company or project can be a difficult process. I have been on both sides of that journey and I can fully empathize with your current task. In an effort to ease your decision, I have decided to build you this:
 
-A [Portfolio & body of work](https://cojanks.github.io/portfolio/) that gives you the examples and tools to confirm that I am the right candidate for your `engineering team` or `React-based project`.
+A [portfolio & body of work](https://cojanks.github.io/portfolio/) that gives you the examples and tools to confirm that I am the right candidate for your `engineering team` or `React-based project`.
 
 ## (Ok, now for the self promotion)
 
 Your time is valuable so why don't I summarize why you should invite me to join your team or project.
 
 - I am a `designer by education` with an `engineer's methodology and skillset`, combining the best of both worlds to create intuitive, scalable, and beautiful experiences for your users and customers.
-- A `width breadth` of experience. From large Fintech companies, startups engineering teams of less than 15 employees, to one-off web projects, I have installed myself as an intregral part of any team.
+- A `wide breadth` of experience. From large fintech companies, startups engineering teams of less than 15 employees, to one-off web projects, I have installed myself as an intregral part of any team.
 - `Client-facing` collaboration & communication expertise. We engineers love to build things and building lasting relationships with clients is something I enjoy.
 - I `enjoy building unique interactions`. You have a distinctive product which you believe stands out in this market and I would love to help you make it stand out even more. Let's work together!
 

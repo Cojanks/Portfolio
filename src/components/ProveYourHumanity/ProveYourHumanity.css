@@ -1,0 +1,15 @@
+.turning-test--container {
+  padding: 20px;
+  background-color: rgb(109, 116, 119, 0.4);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+}
+
+.request {
+  margin-bottom: 15px;
+}

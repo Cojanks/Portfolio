@@ -31,7 +31,7 @@ function IntroductionSection() {
         </h1>
 
         <div style={{ marginTop: '60px', marginBottom: '10px' }}>
-          Hold on, getting some Tacos for us ( Austin has the best, hands down
+          Hold on, getting some tacos for us ( Austin has the best, hands down
           )...
         </div>
         <Progress
