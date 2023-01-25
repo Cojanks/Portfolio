@@ -15,7 +15,7 @@ function App() {
   );
   return (
     <>
-      <ProveYourHumanity></ProveYourHumanity>
+      {/* <ProveYourHumanity></ProveYourHumanity> */}
       <IntroductionSection></IntroductionSection>
       <AboutMeSection></AboutMeSection>
       <ExamplesSection></ExamplesSection>
