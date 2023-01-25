@@ -11,6 +11,7 @@
 
 .card--image {
   min-width: 200px;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .card--image img {
