@@ -4,6 +4,7 @@ import './Tab.css';
 
 type TabProps = {
   panes: TabPaneTypes[];
+  initTabActive: number;
 } & CompPropsWithChildrenAndStyles;
 
 type TabPaneTypes = {
@@ -16,8 +17,8 @@ type TabPaneContentTypes = {
   content: string | React.ReactNode | JSX.Element;
 };
 
-const Tab: FC<TabProps> = ({ panes }) => {
-  const [activeTabIndex, setActiveTabIndex] = useState(0);
+const Tab: FC<TabProps> = ({ panes, initTabActive }) => {
+  const [activeTabIndex, setActiveTabIndex] = useState(initTabActive || 0);
 
   return (
     <div className="tab--container">

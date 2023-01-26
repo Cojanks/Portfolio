@@ -41,6 +41,7 @@ function AboutMeSection() {
               Internet Bard: Front End Developer [Lvl 5] - Chaotic Pragmatic
             </div>
             <Tab
+              initTabActive={0}
               panes={[
                 {
                   tabTitle: 'Qualifications & Skills',

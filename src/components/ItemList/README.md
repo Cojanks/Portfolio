@@ -2,7 +2,7 @@
 
 A filterable tag-based list component.
 
-## Product design & thinking for this site
+## Product design & thinking for this component
 
 My initial thought was to make this into a table but in reality, this was simply a list with additional details .
 
