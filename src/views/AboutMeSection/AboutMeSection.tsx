@@ -9,11 +9,11 @@ import QualificationsView from './QualificationsView';
 import './AboutMeSection.css';
 import List from 'components/List/List';
 import { dispatch, useSelector } from 'store/store';
-import { setActiveTab } from 'store/slices/sirDoYouClassifyAsHuman';
+import { setActiveTab } from 'store/slices/sitePreferences';
 
 function AboutMeSection() {
   const initActiveTab = useSelector(
-    (state) => state.sirDoYouClassifyAsHumanReducer.activeAboutMeTab
+    (state) => state.sitePreferencesSliceReducer.activeAboutMeTab
   );
 
   return (

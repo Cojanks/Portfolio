@@ -5,9 +5,10 @@ import {
   TypedUseSelectorHook,
 } from 'react-redux';
 import { sirDoYouClassifyAsHumanReducer } from './slices/sirDoYouClassifyAsHuman';
+import { sitePreferencesSliceReducer } from './slices/sitePreferences';
 
 const necronomicon = configureStore({
-  reducer: { sirDoYouClassifyAsHumanReducer },
+  reducer: { sirDoYouClassifyAsHumanReducer, sitePreferencesSliceReducer },
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
