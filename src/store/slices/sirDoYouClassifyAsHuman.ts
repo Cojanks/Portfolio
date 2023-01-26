@@ -5,16 +5,22 @@ export type InitialStateProps = {
   areYouAMeatBag: boolean;
   lifeform: string;
   whatsHisName: string;
+  activeAboutMeTab: number | undefined;
 };
 
 const isHuman = !!localStorage.getItem('isHuman');
 console.log('Sir, do you classify as human?: ' + isHuman);
+
+const initActiveTab = !!localStorage.getItem('activeAboutMeTab')
+  ? +localStorage.getItem('activeAboutMeTab')!
+  : undefined;
 
 const initialState: InitialStateProps = {
   IWonderHowManyWillFindThisState: 'Well, you did! (Seriously though, hire me)',
   areYouAMeatBag: false,
   lifeform: '',
   whatsHisName: 'Dade Murphy',
+  activeAboutMeTab: initActiveTab,
 };
 
 export const sirDoYouClassifyAsHumanSlice = createSlice({
@@ -36,6 +42,10 @@ export const sirDoYouClassifyAsHumanSlice = createSlice({
     setMeatbagClassification: (state, action) => {
       state = { ...state, lifeform: action.payload.classification };
     },
+    setActiveTab: (state, action) => {
+      state = { ...state, activeAboutMeTab: action.payload.activeAboutMeTab };
+      localStorage.setItem('activeAboutMeTab', action.payload.activeAboutMeTab);
+    },
   },
 });
 
@@ -44,6 +54,7 @@ export const {
   confirmMeatbagHuman,
   unconfirmMeatbagHuman,
   setMeatbagClassification,
+  setActiveTab,
 } = sirDoYouClassifyAsHumanSlice.actions;
 
 export const sirDoYouClassifyAsHumanReducer =

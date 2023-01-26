@@ -5,6 +5,7 @@ import './Tab.css';
 type TabProps = {
   panes: TabPaneTypes[];
   initTabActive: number;
+  onTabChange?: (index: number) => void | undefined;
 } & CompPropsWithChildrenAndStyles;
 
 type TabPaneTypes = {
@@ -17,8 +18,16 @@ type TabPaneContentTypes = {
   content: string | React.ReactNode | JSX.Element;
 };
 
-const Tab: FC<TabProps> = ({ panes, initTabActive }) => {
+const Tab: FC<TabProps> = ({ panes, initTabActive, onTabChange }) => {
   const [activeTabIndex, setActiveTabIndex] = useState(initTabActive || 0);
+
+  const tabChange = (ind: number) => {
+    setActiveTabIndex(ind);
+
+    if (onTabChange) {
+      onTabChange(ind);
+    }
+  };
 
   return (
     <div className="tab--container">
@@ -33,7 +42,7 @@ const Tab: FC<TabProps> = ({ panes, initTabActive }) => {
                   : 'tab--header'
               }
               onClick={() => {
-                setActiveTabIndex(ind);
+                tabChange(ind);
               }}
             >
               {header.tabTitle}

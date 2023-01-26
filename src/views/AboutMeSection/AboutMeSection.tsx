@@ -8,8 +8,14 @@ import QualificationsView from './QualificationsView';
 
 import './AboutMeSection.css';
 import List from 'components/List/List';
+import { dispatch, useSelector } from 'store/store';
+import { setActiveTab } from 'store/slices/sirDoYouClassifyAsHuman';
 
 function AboutMeSection() {
+  const initActiveTab = useSelector(
+    (state) => state.sirDoYouClassifyAsHumanReducer.activeAboutMeTab
+  );
+
   return (
     <section className="aboutMeSection">
       <div className="ui two tablet column stackable centered grid responsiveGridContainer">
@@ -41,7 +47,14 @@ function AboutMeSection() {
               Internet Bard: Front End Developer [Lvl 5] - Chaotic Pragmatic
             </div>
             <Tab
-              initTabActive={0}
+              initTabActive={initActiveTab ? initActiveTab : 0}
+              onTabChange={(e: any) => {
+                dispatch(
+                  setActiveTab({
+                    activeAboutMeTab: e,
+                  })
+                );
+              }}
               panes={[
                 {
                   tabTitle: 'Qualifications & Skills',
