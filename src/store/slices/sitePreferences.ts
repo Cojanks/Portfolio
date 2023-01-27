@@ -5,13 +5,17 @@ export type InitialStateProps = {
   activeFilters: string[];
 };
 
+const initActiveFilters = !!localStorage.getItem('activeFilters')
+  ? localStorage.getItem('activeFilters')!.split(',')
+  : ['custom component', 'api', 'app views'];
+
 const initActiveTab = !!localStorage.getItem('activeAboutMeTab')
   ? +localStorage.getItem('activeAboutMeTab')!
   : undefined;
 
 const initialState: InitialStateProps = {
   activeAboutMeTab: initActiveTab,
-  activeFilters: [],
+  activeFilters: initActiveFilters,
 };
 
 export const sitePreferencesSlice = createSlice({
@@ -19,13 +23,20 @@ export const sitePreferencesSlice = createSlice({
   initialState,
   reducers: {
     setActiveTab: (state, action) => {
-      state = { ...state, activeAboutMeTab: action.payload.activeAboutMeTab };
+      state.activeAboutMeTab = action.payload.activeAboutMeTab;
       localStorage.setItem('activeAboutMeTab', action.payload.activeAboutMeTab);
+    },
+    setActiveFilters: (state, action) => {
+      state.activeFilters = action.payload.activeFilters;
+      localStorage.setItem(
+        'activeFilters',
+        action.payload.activeFilters.join(',')
+      );
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { setActiveTab } = sitePreferencesSlice.actions;
+export const { setActiveTab, setActiveFilters } = sitePreferencesSlice.actions;
 
 export const sitePreferencesSliceReducer = sitePreferencesSlice.reducer;

@@ -2,10 +2,23 @@ import ItemList from 'components/ItemList/ItemList';
 import React from 'react';
 
 import { listData } from 'data/ItemListData';
+import { dispatch, useSelector } from 'store/store';
+import { setActiveFilters } from 'store/slices/sitePreferences';
 
 import './ExamplesSection.css';
 
 function ExamplesSection() {
+  const cookiedActiveFilters = useSelector(
+    (state) => state.sitePreferencesSliceReducer.activeFilters
+  );
+
+  const onFilterChange = (arr: string[]) => {
+    dispatch(
+      setActiveFilters({
+        activeFilters: arr,
+      })
+    );
+  };
   return (
     <section className="examplesSection">
       <div className="ui one column centered grid responsiveGridContainer">
@@ -47,10 +60,11 @@ function ExamplesSection() {
           </div>
 
           <ItemList
+            onFilterChange={onFilterChange}
             tags={listData.tags}
             items={listData.items}
             header={listData.header}
-            initTagsActive={['custom component', 'api', 'app views']}
+            initTagsActive={cookiedActiveFilters}
           ></ItemList>
         </div>
       </div>

@@ -7,6 +7,7 @@ export type ItemListProps = {
   initTagsActive?: string[];
   items: ItemType[];
   key?: string;
+  onFilterChange?: (filterArr: string[]) => void | undefined;
 } & CompPropsWithChildrenAndStyles;
 
 type HeaderType = {

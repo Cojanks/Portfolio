@@ -1,5 +1,5 @@
 import Pill from 'components/Pill/Pill';
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { Icon } from 'semantic-ui-react';
 import Item from './Item';
 
@@ -11,6 +11,7 @@ const ItemList: FC<ItemListProps> = ({
   tags,
   items,
   initTagsActive = [],
+  onFilterChange,
 }) => {
   const [isFilterOpen, setisFilterOpen] = useState(true);
 
@@ -27,10 +28,35 @@ const ItemList: FC<ItemListProps> = ({
 
   const [activeTags, setactiveTags] = useState(setInitActiveTags);
 
-  const handleFilterClick = () => {
+  const handleFilterOpen = () => {
     const initFilterOpen = isFilterOpen;
     setisFilterOpen(!initFilterOpen);
   };
+
+  const handleFilterChange = (tag: any) => {
+    const name = tag.name.toLowerCase();
+    const newVal = !activeTags[name];
+    setactiveTags({
+      ...activeTags,
+      [name as string]: newVal,
+    });
+  };
+
+  useEffect(() => {
+    const setData = () => {
+      if (onFilterChange) {
+        let activeTagsArr: string[] = [];
+
+        for (const tag in activeTags) {
+          if (activeTags[tag]) {
+            activeTagsArr.push(tag);
+          }
+        }
+        onFilterChange(activeTagsArr);
+      }
+    };
+    setData();
+  }, [activeTags]);
 
   return (
     <div className="itemList--container">
@@ -74,12 +100,7 @@ const ItemList: FC<ItemListProps> = ({
                 color={tag.color}
                 clickable
                 onClick={() => {
-                  const name = tag.name.toLowerCase();
-                  const newVal = !activeTags[name];
-                  setactiveTags({
-                    ...activeTags,
-                    [name as string]: newVal,
-                  });
+                  handleFilterChange(tag);
                 }}
                 variant={
                   activeTags[tag.name.toLowerCase()] ? 'filled' : 'outlined'
@@ -91,7 +112,7 @@ const ItemList: FC<ItemListProps> = ({
           })}
         </div>
 
-        <div className="itemList--filter-expand" onClick={handleFilterClick}>
+        <div className="itemList--filter-expand" onClick={handleFilterOpen}>
           {isFilterOpen ? (
             <>
               <span>Close Filters </span>
