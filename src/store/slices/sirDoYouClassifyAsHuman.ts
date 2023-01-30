@@ -32,7 +32,7 @@ export const sirDoYouClassifyAsHumanSlice = createSlice({
     },
     unconfirmMeatbagHuman: (state) => {
       state.areYouAMeatBag = false;
-      localStorage.removeItem('isHuman');
+      localStorage.removeItem('areYouAMeatBag');
       console.log("Removing 'H U M A N' Classification...");
     },
     setMeatbagClassification: (state, action) => {

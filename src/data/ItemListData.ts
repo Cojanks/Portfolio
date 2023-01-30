@@ -38,6 +38,28 @@ export const listData = {
     },
     {
       id: '2',
+      name: 'Grade_ Application -> (in active development)',
+      description:
+        'A Grading application for educators to keep track of student grades, assignments, etc. Features to be added: The ability for educators to add/remove students, switch between different classes, adding assignments & grades, and leaving notes. Logging in & auth will be added for parents/students to sign in and view their grades/notes. Built using MUI & using a static API/database (so no actual POST capabilitt, github pages and all..)',
+      tags: [
+        'typescript',
+        'full app',
+        'redux',
+        'state management',
+        'api',
+        'validation',
+        'app views',
+      ],
+      externalLinks: [
+        { name: 'Github Repo', url: 'https://github.com/Cojanks/portfolio' },
+        {
+          name: 'README',
+          url: 'https://github.com/Cojanks/portfolio/blob/main/README.md',
+        },
+      ],
+    },
+    {
+      id: '3',
       name: '[View Components] - (the various sections and tab content blocks)',
       description:
         'I adopted the approach where a view component (within /views) will handle any kind of data fetching / procesing which are then just passed to the individual components to keep them lighter weight ',
@@ -62,7 +84,7 @@ export const listData = {
       ],
     },
     {
-      id: '3',
+      id: '4',
       name: '[Item List] - (this component)',
       description: 'A tag-based filterable list component',
       tags: [
@@ -83,7 +105,7 @@ export const listData = {
       ],
     },
     {
-      id: '4',
+      id: '5',
       name: '[Tab] Component - (above)',
       description:
         'A container component that can change content based on the active tab. This content can be of type [`string` |` React.ReactNode` | `JSX.Element`] which gives a lot of flexability to developers. How I implemented this was with individual view components one of which fetches data from a static API to hydrate a [Timeline] component',
@@ -100,7 +122,7 @@ export const listData = {
       ],
     },
     {
-      id: '5',
+      id: '6',
       name: "[Timeine] Component - (seen within the 'Experience' tab above)",
       description: 'A visual time components with much of the content able to ',
       tags: ['typescript', 'custom component', 'api', 'Strict Typing'],
@@ -116,7 +138,7 @@ export const listData = {
       ],
     },
     {
-      id: '6',
+      id: '7',
       name: '[Profile Card] Component - (above)',
       description: 'A tag-based filterable list component',
       tags: ['typescript', 'custom component', 'state management'],
