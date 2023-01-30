@@ -85,7 +85,7 @@ export const listData = {
     },
     {
       id: '4',
-      name: '[Item List] - (this component)',
+      name: '[Item List] Component - (this right here)',
       description: 'A tag-based filterable list component',
       tags: [
         'typescript',
