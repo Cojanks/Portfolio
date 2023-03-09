@@ -40,7 +40,7 @@ export const listData = {
       id: '2',
       name: 'Grade_ Application -> (in active development)',
       description:
-        'A Grading application for educators to keep track of student grades, assignments, etc. Features to be added: The ability for educators to add/remove students, switch between different classes, adding assignments & grades, and leaving notes. Logging in & auth will be added for parents/students to sign in and view their grades/notes. Built using MUI & using a static API/database (so no actual POST capabilitt, github pages and all..)',
+        'A Grading application for educators to keep track of student grades, assignments, etc. Features to be added: The ability for educators to add/remove students, switch between different classes, adding assignments & grades, and leaving notes. Logging in & auth will be added for parents/students to sign in and view their grades/notes. Built using MUI & using a static API/database (so no actual POST capability, github pages and all..)',
       tags: [
         'typescript',
         'full app',
@@ -51,11 +51,7 @@ export const listData = {
         'app views',
       ],
       externalLinks: [
-        { name: 'Github Repo', url: 'https://github.com/Cojanks/portfolio' },
-        {
-          name: 'README',
-          url: 'https://github.com/Cojanks/portfolio/blob/main/README.md',
-        },
+        { name: 'Github Repo', url: 'https://github.com/Cojanks/Grade_' },
       ],
     },
     {
