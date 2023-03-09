@@ -58,7 +58,7 @@ export const listData = {
       id: '3',
       name: '[View Components] - (the various sections and tab content blocks)',
       description:
-        'I adopted the approach where a view component (within /views) will handle any kind of data fetching / procesing which are then just passed to the individual components to keep them lighter weight ',
+        'I adopted the approach where a view component (within /views) will handle any kind of data fetching / processing which are then just passed to the individual components to keep them lighter weight. This approach helps to separate concerns between the reusability of individual components and the typical but individual operations that a particular pages needs (fetching, layout, etc).',
       tags: [
         'typescript',
         'app views',
