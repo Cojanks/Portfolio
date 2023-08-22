@@ -46,7 +46,7 @@
         "header": "Children of Time",
         "subHeader": "Adrian Tchaikovsky"
       },
-      "description": "First in a trilogy, a saga of uplifting a species of spider to a space-faring civilation... Imaginative and incredible",
+      "description": "First in a trilogy, a saga of an uplifted spider species into a space-capable civilization ... Imaginative and incredible",
       "tags": ["Favorite Books"],
       "secret": true
     },
@@ -57,6 +57,16 @@
         "subHeader": "Claire North"
       },
       "description": "A unique take on time loops, simply a great story. ",
+      "tags": ["Favorite Books"],
+      "secret": true
+    },
+    {
+      "name": "The Culture series",
+      "itemCustomHeader": {
+        "header": "The Culture (series)",
+        "subHeader": "Iain M Banks"
+      },
+      "description": "A series of books in the same universe. Sentient ships, a fascinating exploration of a, AI-led Kardashev Type III civilization, and all wrapped up with an extremely dry sense of humor about the whole thing.",
       "tags": ["Favorite Books"],
       "secret": true
     }
