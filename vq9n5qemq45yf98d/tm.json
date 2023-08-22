@@ -27,6 +27,34 @@
       ]
     },
     {
+      "date": "2023 - July",
+
+      "content": "Freelance",
+      "position": "Software Engineer",
+      "contentExtras": {
+        "type": "list",
+        "iconList": [
+          {
+            "icon": "file code",
+            "content": "Strategized and built custom plug-in for a freelance toy-making client utilizing the Scratch Block API"
+          },
+          {
+            "icon": "object group outline",
+            "content": "Prototyped, and pitched various front end solutions and opportunities to investors for the above Scratch Blocks client"
+          },
+          {
+            "icon": "microchip",
+            "content": "Built communication infrastructure between arduino-based micro-controllers for use with small robotic peripherals in toys."
+          }
+        ]
+      },
+      "additionalTimeframeEvents": [
+        {
+          "date": "2023 - January"
+        }
+      ]
+    },
+    {
       "date": "2022 - Sept",
       "eventType": "work",
       "content": "Snap Inc",
@@ -70,7 +98,7 @@
         "iconList": [
           {
             "icon": "sitemap",
-            "content": "Designed, implemented and scaled a reusable & accessible Design System which leveraged design standards from the global Schwab UX team while establishing a community-driven standard of code re-usability, readability, and quality."
+            "content": "Designed, implemented, and scaled a reusable & accessible Design System which leveraged design standards from the global Schwab UX team while establishing a community-driven standard of code re-usability, readability, and quality."
           },
           {
             "icon": "file code",
