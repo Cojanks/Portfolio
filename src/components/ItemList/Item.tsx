@@ -36,7 +36,7 @@ const Item: FC<ItemType> = ({
           <div className="item--info-content">
             {itemCustomHeader ? (
               <h4>
-                {itemCustomHeader.subHeader}{' '}
+                {itemCustomHeader.header}{' '}
                 <span
                   style={{
                     color: '#a6a6a6',
