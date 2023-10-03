@@ -22,33 +22,51 @@
       },
       "additionalTimeframeEvents": [
         {
-          "date": "2023..."
+          "date": "Soon..."
         }
       ]
     },
     {
-      "date": "2023 - July",
+      "date": "2023 - January",
 
-      "content": "Freelance",
-      "position": "Software Engineer",
+      "content": "Trantor Engineering",
+      "position": "Full Stack Engineer / Front End Developer",
       "contentExtras": {
         "type": "list",
         "iconList": [
           {
-            "icon": "file code",
-            "content": "Strategized and built custom plug-in for a freelance toy-making client utilizing the Scratch Block API"
+            "icon": "book",
+            "content": "Contracted to build a full stack solution for a book recommendation application with socializing features."
           },
           {
-            "icon": "object group outline",
-            "content": "Prototyped, and pitched various front end solutions and opportunities to investors for the above Scratch Blocks client"
+            "icon": "react",
+            "content": "Built with a React front end (React Router + Redux & entirely in Typescript)."
           },
           {
-            "icon": "microchip",
-            "content": "Built communication infrastructure between arduino-based micro-controllers for use with small robotic peripherals in toys."
+            "icon": "database",
+            "content": "Custom PostgreSQL database, Authentication, session management, custom SQL functions, collection permissions, and more features using the Supabase platform."
           }
         ]
       },
       "additionalTimeframeEvents": [
+        {
+          "date": "Q2 - Q3 2023",
+          "type": "list",
+          "contentExtras": {
+            "date": "May 2023",
+            "type": "list",
+            "iconList": [
+              {
+                "icon": "file code",
+                "content": "Strategized and built custom Javascript module for a toy-making client utilizing the Scratch Blocks API. Utilized custom prototypes to pitch various front end solutions and opportunities to investors."
+              },
+              {
+                "icon": "microchip",
+                "content": "Built communication infrastructure between arduino-based micro-controllers for use with small robotic peripherals in toys."
+              }
+            ]
+          }
+        },
         {
           "date": "2023 - January"
         }
