@@ -94,6 +94,41 @@ const Timeline: FC<TimelineType> = ({ title, items }) => {
                         <div className="timeline--item-content">
                           {extraEvent.content}
                         </div>
+                        {extraEvent.contentExtras && (
+                          <div className="timeline--item-content-additional">
+                            <ul
+                              className={
+                                !!extraEvent.contentExtras.iconList
+                                  ? 'timeline--item-content-additional-list timeline--item-content-additional-icon-list'
+                                  : 'timeline--item-content-additional-list'
+                              }
+                            >
+                              {extraEvent.contentExtras.iconList &&
+                                extraEvent.contentExtras.iconList.map(
+                                  (iconItem, i) => {
+                                    return (
+                                      <li key={i}>
+                                        <Icon
+                                          name={
+                                            iconItem.icon === ''
+                                              ? 'angle right'
+                                              : iconItem.icon
+                                          }
+                                        ></Icon>{' '}
+                                        {iconItem.content}
+                                      </li>
+                                    );
+                                  }
+                                )}
+                              {extraEvent.contentExtras.list &&
+                                extraEvent.contentExtras.list.map(
+                                  (extraContent) => {
+                                    return <li>{extraContent}</li>;
+                                  }
+                                )}
+                            </ul>
+                          </div>
+                        )}
                       </div>
                     );
                   })}
