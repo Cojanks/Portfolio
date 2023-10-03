@@ -184,5 +184,17 @@ export const listData = {
       tags: ['Favorite Books'],
       secret: true,
     },
+    {
+      id: 'b4',
+      name: 'The Culture series',
+      itemCustomHeader: {
+        header: 'The Culture series',
+        subHeader: 'Iain M. Banks',
+      },
+      description:
+        "A series of books in the same universe. Sentient ships, a fascinating exploration of an AI-led Kardashev Type III civilization, and all wrapped up with an extremely dry sense of humor about this whole 'existance' thing",
+      tags: ['Favorite Books'],
+      secret: true,
+    },
   ],
 };
