@@ -36,15 +36,15 @@
         "iconList": [
           {
             "icon": "book",
-            "content": "Contracted to build a full stack solution for a book recommendation application with socializing features."
+            "content": "Developed and implemented a full stack, social book recommendation platform in collaboration with local and national book club organizations."
           },
           {
             "icon": "react",
-            "content": "Built with a React front end (React Router + Redux & entirely in Typescript)."
+            "content": "Utilized React (React Router + Redux) and Typescript to build the front-end, incorporating MUI and other UI frameworks for enhanced user experience."
           },
           {
             "icon": "database",
-            "content": "Custom PostgreSQL database, Authentication, session management, custom SQL functions, collection permissions, and more features using the Supabase platform."
+            "content": "Designed and architected features such as advanced search functionality utilizing Google Books, Open Library, and other API services. Leveraged PostgreSQL database for efficient data management, implementing authentication, session management, and custom SQL functions."
           }
         ]
       },
@@ -82,7 +82,11 @@
         "iconList": [
           {
             "icon": "shop",
-            "content": "Responsible for the bespoke front-end implementation of the patented Augmented Reality, 3D, and Virtual Try-On experiences while also integrating seemlessly into an existing client web channel."
+            "content": "Strategized, roadmapped and developed the initial groundwork for a unified SDK to standardize the web-based entry point for eCommerce developers to enable Snap’s web-based Augmented Reality, Virtual Try-On, and 3D experiences for client e-commerce products."
+          },
+          {
+            "icon": "react",
+            "content": "Refactored experiences into reusable React components (written in Typescript) which integrated into an existing clients tech stack."
           },
           {
             "icon": "copyright",
@@ -90,7 +94,7 @@
           },
           {
             "icon": "conversation",
-            "content": "Optimized implementation decisions and designs using A/B testing data on user interaction, user conversion information, and client feedback."
+            "content": "Leveraged various A/B testing scaffolding frameworks to ensure clients received insight into customer behaviors, conversion activity, and areas for UI improvement."
           }
         ]
       },
